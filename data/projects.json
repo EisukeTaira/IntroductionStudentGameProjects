@@ -11,13 +11,6 @@
     ],
     "videos": [
       {
-        "src": "videos/maze_runner_demo.mp4",
-        "type": "video/mp4",
-        "poster": "images/maze_runner_poster.jpg",
-        "caption": "ゲームデモ（ローカルMP4）",
-        "provider": "self"
-      },
-      {
         "src": "https://www.youtube.com/embed/XXXXXXXXXXXXXXXXXXX",
         "type": "text/html",
         "poster": "images/maze_runner_poster.jpg",
@@ -40,11 +33,11 @@
     ],
     "videos": [
       {
-        "src": "https://player.vimeo.com/video/123456789",
+        "src": "https://www.youtube.com/embed/YYYYYYYYYYYYYYY",
         "type": "text/html",
         "poster": "images/pixel_shooter_poster.jpg",
-        "caption": "Vimeo にアップしたプレイ映像",
-        "provider": "vimeo"
+        "caption": "YouTube にアップしたプレイ映像",
+        "provider": "youtube"
       }
     ],
     "author": "佐藤 花子",
