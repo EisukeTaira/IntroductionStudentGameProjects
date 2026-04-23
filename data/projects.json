@@ -1,0 +1,54 @@
+[
+  {
+    "id": "proj-001",
+    "title": "迷路ランナー",
+    "shortDescription": "ランダム生成迷路を走り抜けるアクションゲーム",
+    "longDescription": "ランダムに生成される迷路を走り抜け、ゴールを目指すシングルプレイヤーゲーム。複数の難易度とアイテム要素を実装。",
+    "technologies": ["HTML5", "JavaScript", "Canvas"],
+    "images": [
+      {"src": "images/maze_runner_thumb.jpg", "alt": "迷路ランナー サムネイル", "caption": "タイトル画面"},
+      {"src": "images/maze_runner_play.jpg", "alt": "プレイ画面", "caption": "ゲームプレイ画面（難易度: 中級）"}
+    ],
+    "videos": [
+      {
+        "src": "videos/maze_runner_demo.mp4",
+        "type": "video/mp4",
+        "poster": "images/maze_runner_poster.jpg",
+        "caption": "ゲームデモ（ローカルMP4）",
+        "provider": "self"
+      },
+      {
+        "src": "https://www.youtube.com/embed/XXXXXXXXXXXXXXXXXXX",
+        "type": "text/html",
+        "poster": "images/maze_runner_poster.jpg",
+        "caption": "YouTube デモ映像",
+        "provider": "youtube"
+      }
+    ],
+    "author": "山田 太郎",
+    "year": 2025,
+    "externalLink": "https://example.com/maze-runner"
+  },
+  {
+    "id": "proj-002",
+    "title": "ピクセル弾幕シューティング",
+    "shortDescription": "レトロ風ピクセルアートの縦スクロールシューティング",
+    "longDescription": "レトロなピクセルアートと爽快な弾幕を特徴とする縦スクロールシューティング。スコアランキングとボス戦を実装。",
+    "technologies": ["HTML", "CSS", "JavaScript", "WebAudio"],
+    "images": [
+      {"src": "images/pixel_shooter_thumb.jpg", "alt": "ピクセル弾幕 サムネイル", "caption": "ゲームタイトル画面"}
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/video/123456789",
+        "type": "text/html",
+        "poster": "images/pixel_shooter_poster.jpg",
+        "caption": "Vimeo にアップしたプレイ映像",
+        "provider": "vimeo"
+      }
+    ],
+    "author": "佐藤 花子",
+    "year": 2024,
+    "externalLink": ""
+  }
+]
