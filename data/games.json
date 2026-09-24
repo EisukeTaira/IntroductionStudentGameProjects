@@ -1,3 +1,96 @@
 {
-  "games": []
+  "games": [
+    {
+      "published": true,
+      "id": "photography",
+      "title": "PHOTOGRPHY",
+      "summary": "2Dプラットフォーマー",
+      "description": "-",
+      "features": [
+        "DXライブラリ",
+        "C++"
+      ],
+      "genre": "アクション",
+      "players": "1人用",
+      "playTime": "約15分",
+      "controls": [
+        {
+          "key": "左スティック",
+          "action": "プレイヤー移動"
+        },
+        {
+          "key": "右スティック",
+          "action": "窓移動"
+        },
+        {
+          "key": "Aボタン",
+          "action": "ジャンプ"
+        },
+        {
+          "key": "Bボタン",
+          "action": "窓枠リセット"
+        },
+        {
+          "key": "RBボタン",
+          "action": "窓固定"
+        }
+      ],
+      "supportedOs": [
+        "Windows10",
+        "Windows11"
+      ],
+      "systemRequirements": "Gamepad(XInput)推奨",
+      "teamName": "装甲G部隊",
+      "grade": "3年",
+      "productionYear": 2026,
+      "version": "1.0.0",
+      "fileSize": 0,
+      "updatedAt": "2026-09-24",
+      "videoUrl": "https://drive.google.com/open?id=1yHmUF3VPzkyRFaJuLhgnaVz1MGomjiCx&usp=drive_fs",
+      "launchInstructions": "ZIPを展開し、.exeを実行してください",
+      "pickup": false
+    },
+    {
+      "published": true,
+      "id": "knight-of-ruins",
+      "title": "Knight of Ruins",
+      "summary": "UnrealEngineを使用した3Dアクションゲームです。",
+      "description": "-",
+      "features": [
+        "UnrealEngine5.4",
+        "C++"
+      ],
+      "genre": "アクション",
+      "players": "1人用",
+      "playTime": "約15分",
+      "controls": [
+        {
+          "key": "左スティック",
+          "action": "移動"
+        },
+        {
+          "key": "Aボタン",
+          "action": "攻撃"
+        },
+        {
+          "key": "Bボタン",
+          "action": "回避"
+        }
+      ],
+      "supportedOs": [
+        "Windows10",
+        "Windows11"
+      ],
+      "systemRequirements": "Gamepad(XInput)推奨",
+      "teamName": "4U",
+      "grade": "3年",
+      "productionYear": 2026,
+      "version": "1.0.0",
+      "fileSize": 0,
+      "updatedAt": "2026-09-24",
+      "videoUrl": "https://drive.google.com/open?id=1vBUsX4UpxKtW9zL20p03n7C92dZSZcw2&usp=drive_fs",
+      "launchInstructions": "ZIPを展開し、.exeを実行してください",
+      "pickup": false
+    }
+  ]
 }
