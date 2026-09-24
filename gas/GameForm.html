@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <style>
+    :root { --blue:#2563eb; --blue-dark:#1d4ed8; --ink:#183153; --muted:#5d6f87; --line:#dce9f7; --soft:#f5faff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 18px; color: var(--ink); font-family: system-ui, "Noto Sans JP", sans-serif; font-size: 14px; line-height: 1.55; }
+    h2 { margin: 22px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); font-size: 15px; }
+    h2:first-child { margin-top: 0; }
+    label { display: grid; gap: 5px; margin-bottom: 12px; font-weight: 700; }
+    label span { color: var(--muted); font-size: 12px; font-weight: 400; }
+    input, select, textarea { width: 100%; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); font: inherit; }
+    textarea { min-height: 76px; resize: vertical; }
+    .required::after { color: #b91c1c; content: " *"; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .actions { position: sticky; bottom: 0; margin: 22px -18px -18px; padding: 14px 18px; border-top: 1px solid var(--line); background: rgba(255,255,255,.96); }
+    button { width: 100%; min-height: 44px; border: 0; border-radius: 10px; background: var(--blue); color: #fff; font: inherit; font-weight: 700; }
+    button:hover { background: var(--blue-dark); }
+    button:disabled { background: #aab7c8; }
+    #message { margin: 0 0 10px; padding: 10px; border-radius: 8px; background: var(--soft); }
+    #message:empty { display: none; }
+    #message.error { background: #fee2e2; color: #991b1b; }
+    small { display: block; margin-top: 7px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <form id="game-form">
+    <h2>基本情報</h2>
+    <label><b class="required">作品ID</b><input name="id" required pattern="[a-z0-9]+(?:-[a-z0-9]+)*" placeholder="forest-adventure"><span>URLに使用します。半角英小文字・数字・ハイフンのみ。</span></label>
+    <label><b class="required">ゲームタイトル</b><input name="title" required></label>
+    <label><b class="required">短い紹介文</b><textarea name="summary" required maxlength="140"></textarea><span>ゲーム一覧に表示します。140文字以内を推奨。</span></label>
+    <label><b class="required">詳しい概要</b><textarea name="description" required></textarea></label>
+    <label>特徴<textarea name="features" placeholder="特徴1&#10;特徴2&#10;特徴3"></textarea><span>1行につき1項目。</span></label>
+
+    <h2>分類・制作情報</h2>
+    <div class="row"><label><b class="required">ジャンル</b><select name="genre" required><option value="">選択</option><option>アクション</option><option>アドベンチャー</option><option>パズル</option><option>シューティング</option><option>シミュレーション</option><option>探索</option><option>協力</option><option>その他</option></select></label><label><b class="required">プレイ人数</b><select name="players" required><option value="">選択</option><option>1人用</option><option>2人用</option><option>1～2人用</option><option>複数人用</option></select></label></div>
+    <label>想定プレイ時間<input name="playTime" placeholder="約15分"></label>
+    <div class="row"><label><b class="required">チーム名</b><input name="teamName" required></label><label><b class="required">学年</b><select name="grade" required><option value="">選択</option><option>1年</option><option>2年</option><option>3年</option><option>4年</option><option>その他</option></select></label></div>
+    <label><b class="required">制作年度</b><input name="productionYear" type="number" min="2000" max="2100" required></label>
+
+    <h2>動作・操作</h2>
+    <label><b class="required">対応OS</b><textarea name="supportedOs" required placeholder="Windows 11&#10;Windows 10"></textarea><span>1行につき1項目。</span></label>
+    <label>その他の動作環境<textarea name="systemRequirements" placeholder="Windows 11、キーボード操作"></textarea></label>
+    <label>操作方法<textarea name="controls" placeholder="WASD：移動&#10;Space：ジャンプ"></textarea><span>「キー：操作」の形式で1行につき1項目。</span></label>
+    <label>起動方法<textarea name="launchInstructions" placeholder="ZIPを展開し、Game.exeを実行してください。"></textarea></label>
+
+    <h2>配布情報</h2>
+    <div class="row"><label>バージョン<input name="version" value="1.0.0"></label><label>ファイル容量<input name="fileSize" placeholder="250 MB"></label></div>
+    <label>Google Drive URL<input name="downloadUrl" type="url" placeholder="https://drive.google.com/..."></label>
+    <label>注意事項<textarea name="notes"></textarea></label>
+
+    <h2>画像・動画</h2>
+    <label>サムネイル<input name="thumbnail" placeholder="assets/images/games/id/thumbnail.webp"></label>
+    <label>メイン画像<input name="mainImage" placeholder="assets/images/games/id/main.webp"></label>
+    <label>スクリーンショット<textarea name="screenshots" placeholder="画像パス1&#10;画像パス2"></textarea><span>1行につき1つのパス。</span></label>
+    <label>紹介動画URL<input name="videoUrl" type="url" placeholder="https://..."></label>
+
+    <div class="actions"><div id="message" role="status" aria-live="polite"></div><button id="submit" type="submit">下書きとして追加</button><small>追加後、権利確認と動作確認を行い、シート上で公開にチェックしてください。</small></div>
+  </form>
+  <script>
+    const form = document.getElementById('game-form');
+    const submit = document.getElementById('submit');
+    const message = document.getElementById('message');
+    form.productionYear.value = new Date().getFullYear();
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      submit.disabled = true;
+      message.className = '';
+      message.textContent = '追加しています…';
+      const payload = Object.fromEntries(new FormData(form).entries());
+      google.script.run
+        .withSuccessHandler((result) => {
+          message.textContent = `${result.row}行目に「${result.title}」を下書きとして追加しました。`;
+          form.reset();
+          form.productionYear.value = new Date().getFullYear();
+          form.version.value = '1.0.0';
+          submit.disabled = false;
+        })
+        .withFailureHandler((error) => {
+          message.className = 'error';
+          message.textContent = error.message || String(error);
+          submit.disabled = false;
+        })
+        .addGameFromForm(payload);
+    });
+  </script>
+</body>
+</html>

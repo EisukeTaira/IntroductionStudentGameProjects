@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <style>
+    body { margin: 0; padding: 24px; color: #183153; font-family: system-ui, "Noto Sans JP", sans-serif; line-height: 1.7; }
+    h1 { margin: 0 0 10px; font-size: 20px; }
+    p { margin: 0 0 18px; }
+    button { min-height: 44px; padding: 10px 18px; border: 0; border-radius: 10px; background: #2563eb; color: #fff; font: inherit; font-weight: 700; }
+    button:hover { background: #1d4ed8; }
+    small { display: block; margin-top: 16px; color: #5d6f87; }
+  </style>
+</head>
+<body>
+  <h1>games.jsonを生成しました</h1>
+  <p><?= gameCount ?>作品の公開用データです。</p>
+  <button id="download" type="button">games.jsonをダウンロード</button>
+  <small>ダウンロード後、Webサイトのdata/games.jsonと置き換えてください。</small>
+  <script>
+    const fileName = <?!= JSON.stringify(fileName) ?>;
+    const jsonBase64 = <?!= JSON.stringify(jsonBase64) ?>;
+    document.getElementById('download').addEventListener('click', () => {
+      const bytes = Uint8Array.from(atob(jsonBase64), (char) => char.charCodeAt(0));
+      const blob = new Blob([bytes], { type: 'application/json;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
