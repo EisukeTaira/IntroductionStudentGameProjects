@@ -46,6 +46,8 @@
       "version": "1.0.0",
       "fileSize": 0,
       "updatedAt": "2026-09-24",
+      "thumbnail": "assets/images/PHOTOGRAPHY.png",
+      "mainImage": "assets/images/PHOTOGRAPHY.png",
       "videoUrl": "https://drive.google.com/open?id=1yHmUF3VPzkyRFaJuLhgnaVz1MGomjiCx&usp=drive_fs",
       "launchInstructions": "ZIPを展開し、.exeを実行してください",
       "pickup": false
@@ -88,6 +90,8 @@
       "version": "1.0.0",
       "fileSize": 0,
       "updatedAt": "2026-09-24",
+      "thumbnail": "assets/images/Knight.png",
+      "mainImage": "assets/images/Knight.png",
       "videoUrl": "https://drive.google.com/open?id=1vBUsX4UpxKtW9zL20p03n7C92dZSZcw2&usp=drive_fs",
       "launchInstructions": "ZIPを展開し、.exeを実行してください",
       "pickup": false
