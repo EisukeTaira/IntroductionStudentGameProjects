@@ -95,6 +95,98 @@
       "videoUrl": "https://drive.google.com/open?id=1vBUsX4UpxKtW9zL20p03n7C92dZSZcw2&usp=drive_fs",
       "launchInstructions": "ZIPを展開し、.exeを実行してください",
       "pickup": false
+    },
+    {
+      "published": true,
+      "id": "poyopoyo-paint",
+      "title": "ぽよぽよぺいんと",
+      "summary": "UnrealEngineを使用した3D対戦ゲーム",
+      "description": "-",
+      "features": [
+        "UnrealEngine5.1",
+        "マルチ対戦"
+      ],
+      "genre": "アクション",
+      "players": "複数人用",
+      "playTime": "3分",
+      "controls": [
+        {
+          "key": "左スティック",
+          "action": "移動"
+        },
+        {
+          "key": "右スティック",
+          "action": "視点移動"
+        },
+        {
+          "key": "Aボタン",
+          "action": "攻撃"
+        },
+        {
+          "key": "Bボタン",
+          "action": "ジャンプ"
+        },
+        {
+          "key": "Yボタン",
+          "action": "アイテム使用"
+        }
+      ],
+      "supportedOs": [
+        "Windows10",
+        "Windows11"
+      ],
+      "systemRequirements": "Gamepad(XInput)推奨",
+      "teamName": "teamd",
+      "grade": "4年次",
+      "productionYear": 2026,
+      "version": "1.0.0",
+      "fileSize": 0,
+      "updatedAt": "2026-09-25",
+      "thumbnail": "assets/images/poyopoyopaint.png",
+      "mainImage": "assets/images/poyopoyopaint.png",
+      "videoUrl": "https://drive.google.com/open?id=1aSeeFv4P4Gky_rn65uP4GmlZQFrZlrEJ&usp=drive_fs",
+      "launchInstructions": "ZIPを展開し、.exeを実行してください",
+      "pickup": false
+    },
+    {
+      "published": true,
+      "id": "renkin-crush",
+      "title": "RENKINcrush",
+      "summary": "2Dパズル＆ミニゲーム",
+      "description": "-",
+      "features": [
+        "DXライブラリ",
+        "C++"
+      ],
+      "genre": "パズル",
+      "players": "1人用",
+      "playTime": "約5分",
+      "controls": [
+        {
+          "key": "十字ボタン",
+          "action": "移動"
+        },
+        {
+          "key": "Aボタン",
+          "action": "決定"
+        }
+      ],
+      "supportedOs": [
+        "Windows10",
+        "Windows11"
+      ],
+      "systemRequirements": "Gamepad(XInput)推奨",
+      "teamName": "遊んでる場合じゃない！",
+      "grade": "3年次",
+      "productionYear": 2026,
+      "version": "1.0.0",
+      "fileSize": 0,
+      "updatedAt": "2026-09-25",
+      "thumbnail": "assets/images/RENKINcrash.png",
+      "mainImage": "assets/images/RENKINcrash.png",
+      "videoUrl": "https://drive.google.com/open?id=1ivc8jZdCpymEyjCkcxv58OlWtXu5Y5kj&usp=drive_fs",
+      "launchInstructions": "ZIPを展開し、.exeを実行してください",
+      "pickup": false
     }
   ]
 }
