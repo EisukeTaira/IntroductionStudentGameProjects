@@ -187,6 +187,41 @@
       "videoUrl": "https://drive.google.com/open?id=1ivc8jZdCpymEyjCkcxv58OlWtXu5Y5kj&usp=drive_fs",
       "launchInstructions": "ZIPを展開し、.exeを実行してください",
       "pickup": false
+    },
+    {
+      "published": true,
+      "id": "dieiifdijifjida",
+      "title": "テスト",
+      "summary": "おためしです。",
+      "description": "ためしです。",
+      "features": [
+        "DXライブラリ",
+        "C++"
+      ],
+      "genre": "アクション",
+      "players": "2人用",
+      "playTime": "43分",
+      "controls": [
+        {
+          "key": "十字ボタン",
+          "action": "移動"
+        },
+        {
+          "key": "Aボタン",
+          "action": "決定"
+        }
+      ],
+      "supportedOs": [
+        "Windows11"
+      ],
+      "teamName": "a",
+      "grade": "1年",
+      "productionYear": 2030,
+      "version": "1.0.0",
+      "fileSize": 0,
+      "updatedAt": "2026-09-25",
+      "launchInstructions": "ZIPを展開し、.exeを実行してください",
+      "pickup": false
     }
   ]
 }
