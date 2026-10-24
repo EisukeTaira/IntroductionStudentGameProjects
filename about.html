@@ -45,6 +45,35 @@
                 </div>
                
             </div>
+            <section class="section panel contact-section" aria-labelledby="contact-heading">
+                <div class="contact-heading">
+                    <h2 id="contact-heading">お問い合わせ</h2>
+                    <p>掲載作品やこのサイトについてのお問い合わせは、以下のフォームからお送りください。</p>
+                    <p class="contact-recipient">宛先：<a href="mailto:kbc-2gm@kbcgroup.ac.jp">kbc-2gm@kbcgroup.ac.jp</a></p>
+                </div>
+                <form class="contact-form" data-contact-form>
+                    <div class="field">
+                        <label for="contact-name">お名前 <span class="required-label">必須</span></label>
+                        <input id="contact-name" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="contact-email">メールアドレス <span class="required-label">必須</span></label>
+                        <input id="contact-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+                    </div>
+                    <div class="field contact-form-full">
+                        <label for="contact-subject">件名 <span class="required-label">必須</span></label>
+                        <input id="contact-subject" name="subject" type="text" required>
+                    </div>
+                    <div class="field contact-form-full">
+                        <label for="contact-message">お問い合わせ内容 <span class="required-label">必須</span></label>
+                        <textarea id="contact-message" name="message" rows="7" required></textarea>
+                    </div>
+                    <div class="contact-form-full">
+                        <p class="contact-note">送信ボタンを押すと、お使いのメールアプリが開きます。入力内容をご確認のうえ、メールアプリから送信してください。</p>
+                        <button class="button" type="submit">メールを作成する</button>
+                    </div>
+                </form>
+            </section>
         </div>
     </main>
     <footer class="site-footer">
@@ -57,5 +86,6 @@
         </div>
     </footer>
     <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/contact.js" defer></script>
 </body>
 </html>
