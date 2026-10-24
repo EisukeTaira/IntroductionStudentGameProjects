@@ -191,6 +191,187 @@
       "videoUrl": "https://drive.google.com/open?id=1ivc8jZdCpymEyjCkcxv58OlWtXu5Y5kj&usp=drive_fs",
       "launchInstructions": "ZIPを展開し、.exeを実行してください",
       "pickup": false
+    },
+    {
+      "published": true,
+      "id": "saga",
+      "title": "DIGITAL NEXUS",
+      "summary": "古き良き2Dシューティングゲーム",
+      "description": "-",
+      "features": [
+        "DXライブラリ",
+        "C++"
+      ],
+      "genre": "シューティング",
+      "players": "1人用",
+      "playTime": "10分",
+      "controls": [
+        {
+          "key": "左スティック:移動",
+          "action": ""
+        },
+        {
+          "key": "Aボタン:攻撃",
+          "action": ""
+        },
+        {
+          "key": "RB/LTボタン:モード切替",
+          "action": ""
+        }
+      ],
+      "supportedOs": [
+        "Windows10",
+        "Windows11"
+      ],
+      "systemRequirements": "Gamepad(XInput)推奨",
+      "teamName": "SAGA",
+      "grade": "3年次",
+      "productionYear": 2025,
+      "version": "1.0.0",
+      "fileSize": "426MB",
+      "updatedAt": "2026-06-01",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1dJ539W6-vzy27BrwG6WMocKQ0ouG_7at",
+      "videoUrl": "https://www.youtube.com/watch?v=kjGyoJN9LuE",
+      "launchInstructions": "ZIPを展開し、.exeを実行してください",
+      "pickup": false
+    },
+    {
+      "published": true,
+      "id": "triple",
+      "title": "SweetRampage",
+      "summary": "UnrealEngineを使用した3Dアクションゲーム",
+      "description": "-",
+      "features": [
+        "Unreal Engine 5.1",
+        "C++"
+      ],
+      "genre": "アクション",
+      "players": "1人用",
+      "playTime": "5~10分",
+      "controls": [
+        {
+          "key": "左スティック:移動",
+          "action": ""
+        },
+        {
+          "key": "右スティック:カメラ操作",
+          "action": ""
+        },
+        {
+          "key": "Aボタン:回避",
+          "action": ""
+        },
+        {
+          "key": "Bボタン:攻撃",
+          "action": ""
+        }
+      ],
+      "supportedOs": [
+        "Windows10",
+        "Windows11"
+      ],
+      "systemRequirements": "Gamepad(XInput)推奨",
+      "teamName": "トリプル",
+      "grade": "その他",
+      "productionYear": 2025,
+      "version": "1.0.0",
+      "fileSize": "237MB",
+      "updatedAt": "2026-10-24",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1HzI5m5zHvpNu-T2ZJtW6OfC81_7P203C",
+      "videoUrl": "https://youtu.be/mDLetSibbX4",
+      "launchInstructions": "ZIPを展開し、.exeを実行してください",
+      "pickup": false
+    },
+    {
+      "published": true,
+      "id": "coin-to-shot",
+      "title": "CoinToShot",
+      "summary": "ヴァンサバライクなシューティングゲーム",
+      "description": "-",
+      "features": [
+        "DXライブラリ",
+        "C++",
+        "個人制作"
+      ],
+      "genre": "シューティング",
+      "players": "1人用",
+      "playTime": "10~15分",
+      "controls": [
+        {
+          "key": "左スティック:移動",
+          "action": ""
+        },
+        {
+          "key": "右スティック:照準",
+          "action": ""
+        },
+        {
+          "key": "RB/LBボタン:弾の発射",
+          "action": ""
+        },
+        {
+          "key": "RT/LT:弾の切り替え",
+          "action": ""
+        }
+      ],
+      "supportedOs": [
+        "Windows10",
+        "Window11"
+      ],
+      "systemRequirements": "Gamepad(XInput)推奨",
+      "teamName": "奇数寄り",
+      "grade": "4年次",
+      "productionYear": 2025,
+      "version": "1.0.0",
+      "fileSize": "18.3MB",
+      "updatedAt": "2026-10-24",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=10c8oT4zrXZz4Mce3DTSySPbCdzVlVABD",
+      "videoUrl": "https://youtu.be/F0lKDmiKH2Y",
+      "launchInstructions": "ZIPを展開し、.exeを実行してください",
+      "pickup": false
+    },
+    {
+      "published": true,
+      "id": "go-go-roadmaker",
+      "title": "Go! Go! Road Maker",
+      "summary": "2Dパズル",
+      "description": "-",
+      "features": [
+        "DXライブラリ",
+        "C言語"
+      ],
+      "genre": "パズル",
+      "players": "1人用",
+      "playTime": "10分",
+      "controls": [
+        {
+          "key": "十字ボタン:移動",
+          "action": ""
+        },
+        {
+          "key": "Aボタン:設置/破壊",
+          "action": ""
+        },
+        {
+          "key": "RB/LBボタン:道具の切り替え",
+          "action": ""
+        }
+      ],
+      "supportedOs": [
+        "Window10",
+        "Window11"
+      ],
+      "systemRequirements": "Gamepad(XInput)推奨",
+      "teamName": "4U",
+      "grade": "2年次",
+      "productionYear": 2025,
+      "version": "1.0.0",
+      "fileSize": "115MB",
+      "updatedAt": "2026-10-24",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1KjEFQz3da5qDAL8_u6v8TfRMnKSGx5Rk",
+      "videoUrl": "https://youtu.be/vexbQ5ORvgg",
+      "launchInstructions": "ZIPを展開し、.exeを実行してください",
+      "pickup": false
     }
   ]
 }
